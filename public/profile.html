@@ -1,19 +1,38 @@
 <html>
 <head>
-    <title>Profil</title>
+    <title>Profile</title>
 </head>
 <body>
 
+    <h1></h1>
 <script>
 setInterval(() => {
     const raspuns = confirm("Esti inca activ?");
 
     if (!raspuns) {
-        alert("Te delogam...");
+        alert("Log out");
         window.location.href = "/login.html";
     }
 }, 30000); 
 </script>
+
+<p id="description"></p>
+
+<!-- <script>
+
+const params = new URLSearchParams(window.location.search);
+
+const user = params.get("user");
+
+const desc = params.get("desc");
+
+document.getElementById("username").innerText =
+    "Utilizator: " + user;
+
+document.getElementById("description").innerText =
+    "Descriere: " + desc;
+
+</script> -->
 
 </body>
 </html>

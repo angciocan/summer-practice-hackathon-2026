@@ -41,9 +41,9 @@ app.post('/login', (req, res) => {
     );
 
     if (user) {
-        res.redirect(`/profile.html?user=${username}`);
+        res.redirect(`/profile.html?user=${username}&desc=${user.description}`);
     } else {
-        res.send("Date incorecte");
+        res.send("Failed login");
     }
 });
 
