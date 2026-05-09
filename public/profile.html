@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Profil</title>
+</head>
+<body>
+
+<script>
+setInterval(() => {
+    const raspuns = confirm("Esti inca activ?");
+
+    if (!raspuns) {
+        alert("Te delogam...");
+        window.location.href = "/login.html";
+    }
+}, 30000); 
+</script>
+
+</body>
+</html>
